@@ -1,0 +1,57 @@
+.container {
+  display: grid;
+  place-items: center;
+}
+.header {
+  position: relative;
+}
+.nav-links {
+  position: absolute;
+  visibility: hidden;
+  display: inline;
+  opacity: 0%;
+  height: 10px;
+}
+
+.animate {
+  animation-name: animateOnClick;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animateOnClick {
+  from {
+    visibility: hidden;
+    height: 10px;
+    opacity: 0%;
+  }
+  to {
+    display: inline-block;
+    visibility: visible;
+    background-color: hsl(240, 100%, 40%);
+    height: 200px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px 2px hsl(0, 0%, 90%);
+    padding: 1em;
+    width: 8em;
+    opacity: 50%;
+    animation-play-state: paused;
+  }
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0.8em;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+a {
+  text-decoration: none;
+  color: hsl(240, 100%, 70%);
+  color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+  color: hsl(120, 90%, 70%);
+}
