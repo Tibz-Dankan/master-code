@@ -5,9 +5,13 @@
 ## There are 5 categories under which these responses are classified:
 
 **1xx Informational** - The request was received but is still processing.
+
 **2xx Success**- The request was received, accepted and processed successfully.
+
 **3xx Redirection** - The client needs to take additional action to complete the request.
+
 **4xx Client Error** - An error occurred on the client side.
+
 **5xx Server Error** - An error occurred on the server side.
 
 ## 200 OK
