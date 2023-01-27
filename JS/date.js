@@ -35,7 +35,12 @@ const date4Roman1 = date4.toDateString();
 console.log(date4Roman1); //Sun Jul 03 2022;
 
 const date4Roman2 = date4.toISOString();
+console.log("Iso string");
 console.log(date4Roman2); //2022-07-03T00:05:14.103Z
+console.log("ISO string back to date");
+console.log(new Date(date4Roman2));
+console.log("Full year resulting date of the ISO string");
+console.log(new Date(date4Roman2).getFullYear());
 
 const date4Roman3 = date4.toLocaleDateString();
 console.log(date4Roman3); //7/3/2022
@@ -54,6 +59,10 @@ console.log(date4Roman7); //Sun, 03 Jul 2022 00:14:05 GMT
 
 const date4Roman8 = date4.toJSON();
 console.log(date4Roman8); // 2022-07-03T00:16:22.688Z
+console.log("toJSON string back to date");
+console.log(new Date(date4Roman8));
+console.log("Full year resulting date of the toJSON");
+console.log(new Date(date4Roman8).getFullYear());
 
 const date4Roman9 = date4.getTimezoneOffset();
 console.log(date4Roman9); //-180
