@@ -27,7 +27,8 @@ app.use(express.static(__dirname));
 
 // send html page as response
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  console.log(__dirname);
+  res.sendFile(__dirname + "/home.html");
 });
 
 app.post("/", (req, res) => {
