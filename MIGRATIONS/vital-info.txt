@@ -1,0 +1,35 @@
+
+PULL DATA FROM PRODUCTION POSTGRES DATABASE ON HEROKU TO LOCAL MACHINE
+
+USE THE COMMAND BELOW
+
+heroku pg:pull HEROKU_POSTGRESQL_MAGENTA mylocaldb --app sushi
+
+
+WHERE 
+- mylocaldb is the name of the database locally created
+
+- sushi is the name of the app on heroku
+
+
+FOR MORE INFORMATION VISIT THE LINK BELOW 
+
+https://devcenter.heroku.com/articles/managing-heroku-postgres-using-cli
+
+
+FOR MY CASES I USED THE FOLLOWING COMMANDS FOR ALL MY APPS ON HEROKU
+
+LETSBOOK APP 
+
+heroku pg:pull HEROKU_POSTGRESQL_MAGENTA letsbook_prod --app letsbook
+
+heroku pg:pull postgresql-elliptical-81182 letsbook_prod --app letsbook
+
+
+
+STOCKPILE-BACKEND (CRYPTOPILE) APP
+
+heroku pg:pull HEROKU_POSTGRESQL_MAGENTA cryptopile_prod --app stockile-backend
+
+heroku pg:pull postgresql-amorphous-54969 cryptopile_prod --app stockile-backend
+
