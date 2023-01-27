@@ -1,0 +1,11 @@
+THE CURL COMMANDS
+
+MAKE A POST REQUEST
+
+// signup a user
+
+curl --data "firstName=Tibesigwa&lastName=Dankan&email=tibesigwa&password=mypassword" http://localhost:5000/signup
+
+// login a user
+
+curl --data email ="tibesigwa" && password = "mypassword" http://localhost:5000/login
